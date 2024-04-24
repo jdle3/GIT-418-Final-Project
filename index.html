@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet"> <!-- font -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"> <!-- carousel css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> <!-- shopping cart icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- sun and moon icons -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- load jquery -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> <!-- load jquery ui -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> <!-- load jquery ui css -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <button id="theme-toggle">
+                    <i id="theme-icon" class="fas fa-sun"></i>
+                </button>
+                <li><a href="#team-section">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#productcarousel">Shop</a></li>
+                <li><a href="#dailyweather">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-image">
+            <!-- Hero -->
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Welcome to Sunrise Cafe!</h1>
+                    <p>Welcome to Sunrise Cafe, where every cup of coffee is a promise of a new beginning. Immerse yourself in the warmth of our artisanal brews and the comfort of our homely ambiance as we serve up not just beverages, but moments to cherish.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/cofee-shop-interior1.jpg" alt="Coffee Shop Interior">
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team-section">
+            <div class="text-content">
+                <h2>Meet the Team</h2>
+                <p>
+                At our coffee shop, we believe that a great team is the essence of a great atmosphere and customer experience. That's why we've assembled a group of passionate coffee enthusiasts and baristas who are dedicated to bringing you the best in both service and coffee craftsmanship.
+                </p>
+                <p>
+                Our seasoned roasters are the cornerstone of our flavor adventures, meticulously toasting each bean to perfection. It's their craft that ensures the rich tapestry of tastes in every mug we serve. And then there are our cheerful baristas—the very faces of Sunrise—who welcome you with the warmth of a freshly steamed latte. They're the steady hands crafting your daily indulgence, your personalized espresso experience.
+                </p>
+                <button type="button">Meet Our Team</button>
+            </div>
+            <div class="image-content">
+                <img src="images/teammembers.jpg" alt="Our Coffee Shop Team">
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <ul id="tabs">
+                <li><a id="tab1">Coffee</a></li>
+                <li><a id="tab2">Tea</a></li>
+                <li><a id="tab3">Pastries & Snacks</a></li>
+                <li><a id="tab4">Breakfast</a></li>
+                <li><a id="tab5">Lunch</a></li>
+          </ul>
+                <div class="container" id="tab1C"><span class="bold">Espresso:</span> $2.50<br><span class="bold">Latte:</span> $3.75<br><span class="bold">Cappucino:</span> $3.75<br><span class="bold">Americano:</span> $2.75<br><span class="bold">Mocha:</span> $4.25<br><span class="bold">Frappuccino:</span> $5.25</div>
+                <div class="container" id="tab2C"><span class="bold">English Breakfast:</span> $2.50<br><span class="bold">Green Tea:</span> $2.50<br><span class="bold">Herbal Tea:</span> $2.50<br><span class="bold">Chai:</span> $3.00<br><span class="bold">Matcha:</span> $4.50<br><span class="bold">Lemonade:</span> $4.25</div>
+                <div class="container" id="tab3C"><span class="bold">Croissants:</span> $2.50 (plain), $3.50 (filled)<br><span class="bold">Muffins:</span> $2.75<br><span class="bold">Cookies:</span> $1.50 each, $3.00 for three<br><span class="bold">Scones:</span> $2.75<br><span class="bold">Cheese Danish:</span> $3.50</div>
+                <div class="container" id="tab4C"><span class="bold">Avocado Toast:</span> $6.50<br><span class="bold">Bagel with Cream Cheese:</span> $3.00<br><span class="bold">Breakfast Sandwich:</span> $4.75<br><span class="bold">Oatmeal:</span> $3.50 (premium toppings +$.50 each)<br><span class="bold">Breakfast Burritos:</span> $3.50</div>
+                <div class="container" id="tab5C"><span class="bold">Caprese Sandwich:</span> $7.50<br><span class="bold">Turkey Club:</span> $8.50<br><span class="bold">Veggie Wrap:</span> $7.00<br><span class="bold">Soup of the Day:</span> $4.00 (cup), $6.00 (bowl)<br><span class="bold">Caesar Salad:</span> $6.00, add chicken +$2.00</div>
+        </section>
+
+        <!-- Slick carousel Section -->
+        <section id="productcarousel">
+            <h2 class="our-products">Our Products</h2>
+            <!-- Slides container -->
+            <div class="slides-container">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="images/bluebag.avif" alt="Coffee Bag 1">
+                    <h2>Vanilla & Cocoa Powder</h2>
+                    <p>$17</p>
+                    <button type ="button" class="add-to-cart-button"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="images/greenbag.avif" alt="Coffee Bag 2">
+                    <h2>Citrus & Dark Chocolate</h2>
+                    <p>$17</p>
+                    <button type ="button" class="add-to-cart-button"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="images/redbag.avif" alt="Coffee Bag 3">
+                    <h2>Jam & Toffee</h2>
+                    <p>$17</p>
+                    <button type ="button" class="add-to-cart-button"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img src="images/lightbluebag.avif" alt="Coffee Bag 3">
+                    <h2>Creamy & Caramel</h2>
+                    <p>$17</p>
+                    <button type ="button" class="add-to-cart-button"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <img src="images/orangebag.avif" alt="Coffee Bag 3">
+                    <h2>Dried Fruit & Graham</h2>
+                    <p>$17</p>
+                    <button type ="button" class="add-to-cart-button"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+                <!-- Weather API -->
+                <section id="dailyweather">
+                    <div class="main-container">
+                        <div class="weather-container">
+                            <div id="weather" class="card">
+                                <h2>Today's Weather</h2>
+                                <p>Current Conditions: <span id="conditions">---</span></p>
+                                <p>Current Temp: <span id="temp">---</span>°</p>
+                                <p>Sunrise: <span id="sunrise">---</span></p>
+                                <p>Sunset: <span id="sunset">---</span></p>
+                            </div>
+                    
+                            <div id="activities" class="card">
+                                <h2>What To Drink?</h2>
+                                <ul id="drink-list">
+                                </ul>
+                            </div>
+                        </div>
+                </section>
+                
+                        <button id="get-weather-btn" onclick="getLocalWeather()">Get Local Weather</button>
+                    </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Sunrise Cafe. All rights reserved.</p>
+        <!-- Social media links -->
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
