@@ -387,6 +387,7 @@ footer ul li a {
 }
 
 /* light weather container */
+
 .light-theme .main-container {
     max-width: 960px;
     margin: 20px auto;
@@ -437,6 +438,10 @@ footer ul li a {
 
 .light-theme #get-weather-btn:hover {
     background-color: #e5673f; 
+}
+
+#dailyweather {
+    margin-top: 5%;
 }
 
 /* dark weather container */
